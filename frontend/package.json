@@ -9,7 +9,12 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
-    "vue": "^3.2.13"
+    "cross-spawn": "^7.0.6",
+    "glob": "^11.0.1",
+    "postcss": "^8.5.3",
+    "rimraf": "^6.0.1",
+    "vue": "^3.2.13",
+    "webpack-chain": "^6.5.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -17,8 +22,11 @@
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
-    "eslint": "^7.32.0",
-    "eslint-plugin-vue": "^8.0.3"
+    "eslint": "^9.22.0",
+    "eslint-plugin-vue": "^10.0.0",
+    "eslint-webpack-plugin": "^5.0.0",
+    "sass": "^1.85.1",
+    "sass-loader": "^10.5.2"
   },
   "eslintConfig": {
     "root": true,

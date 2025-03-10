@@ -1,0 +1,8 @@
+-public index.html에 부트스트랩 설치
+https://cdnjs.com/libraries/bootstrap페이지에서 
+https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css 를 링크 걸어준다.
+
+-MemoComp에서 scss를 사용하려면 lang="scss"를 추가해야 한다., 별도로 설치
+ cd frontend에서 설치해야 함.
+ https://www.npmjs.com/package/node-sass 에서 설치
+ 
