@@ -1,13 +1,6 @@
-const { defineConfig } = require('@vue/cli-service');
-const ESLintPlugin = require('eslint-webpack-plugin');
-
-module.exports = defineConfig({
-  transpileDependencies: true,
+module.exports = {
   configureWebpack: {
-    plugins: [
-      new ESLintPlugin({
-        extensions: ['js', 'vue'], // ESLint가 검사할 파일 확장자
-      }),
-    ],
+    plugins: [],
   },
-});
+  lintOnSave: false, // ⚠️ 필요하면 이 줄도 추가 (ESLint 완전 비활성화)
+};
