@@ -31,7 +31,7 @@ export default {
 .memo {
     .act {
         padding: 10px 10px 5px 5px;
-     text-align: right;
+        text-align: right;
     }
   
   ul {
@@ -42,6 +42,9 @@ export default {
     li {
       padding: 5px 10px;
       margin: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #f5eded;
     }
   }
 }
