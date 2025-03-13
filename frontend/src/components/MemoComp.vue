@@ -1,26 +1,37 @@
 <template>
   <div class="memo">
+    <input type="text" v-model="state.data2" />
+
     <div class="act">
-      <button class="btn btn-primary">+추가</button>
+      <button class="btn btn-primary" @click="add()">+추가</button>
     </div>
 
     <ul>
-      <li v-for="d in data" :key="index">{{ d }}</li>
+      <li v-for="data, index in state.data1" :key="index">{{ data }}</li>
     </ul>
   </div>
 </template>
 
 <script>
+import axios from 'axios';
+import { reactive } from "vue";
 export default {
   setup() {
-    const data = [
-      "메모 1 내용입니다.",
-      "메모 2 내용입니다.",
-      "메모 3 내용입니다.",
-      "메모 4 내용입니다.",
-      "메모 5 내용입니다.",
-    ];
-    return { data };
+    const state=reactive({
+      data1:["메모1", "메모2", "메모3"],
+      data2:"",
+     });
+    const add=()=>{
+      state.data1.push(state.data2);
+      state.data2="";  
+     
+    };
+
+    axios.get("/api/memos").then((res)=>{
+      console.log(res.data);
+    });
+
+    return { state, add };
   },
 };
 </script>
