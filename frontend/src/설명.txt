@@ -55,3 +55,12 @@ app.listen(3000, () => {
 📌 백엔드 서버 실행
 node server.js  # 실행 후 http://localhost:3000 에서 확인
 
+
+
+=======================================
+백앤드에서 npm install mairadb 설치
+
+database.js를 만들어 마리아디비 설정관련을 인터넷에 찾아 카피한다.(https://mariadb.com/kb/en/getting-started-with-the-node-js-connector/)
+카피한것을 일부 수정했음
+
+
