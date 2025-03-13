@@ -6,3 +6,52 @@ https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css 를
  cd frontend에서 설치해야 함.
  https://www.npmjs.com/package/node-sass 에서 설치
  
+
+
+1. Vue 프론트엔드 설치 (Vite 사용)
+# 1️⃣ Vue 프로젝트 생성 (Vite 사용)
+npm create vite@latest frontend --template vue  
+
+# 2️⃣ 프로젝트 폴더로 이동
+cd frontend  
+
+# 3️⃣ 필요한 패키지 설치
+npm install  
+
+# 4️⃣ 개발 서버 실행 (http://localhost:5173 에서 확인 가능)
+npm run dev  
+
+
+🟠 2. 백엔드 서버 (Express) 설치 및 실행
+# 1️⃣ 프로젝트 폴더 생성 및 이동
+mkdir backend && cd backend  
+
+# 2️⃣ Node.js 프로젝트 초기화 (`package.json` 생성)
+npm init -y  
+
+# 3️⃣ 필요한 패키지 설치 (Express & CORS)
+npm install express cors  
+
+# 4️⃣ 서버 파일(`server.js`) 생성 및 코드 작성
+touch server.js
+
+
+✍ server.js 파일 내용 (백엔드 서버 코드)
+const express = require("express");
+const cors = require("cors");
+
+const app = express();
+app.use(cors());  // 프론트엔드 요청 허용
+
+app.get("/", (req, res) => {
+  res.send("백엔드 서버가 정상적으로 실행 중입니다!");
+});
+
+app.listen(3000, () => {
+  console.log("서버 실행 중: http://localhost:3000");
+});
+
+
+📌 백엔드 서버 실행
+node server.js  # 실행 후 http://localhost:3000 에서 확인
+
