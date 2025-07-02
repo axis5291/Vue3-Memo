@@ -22,6 +22,13 @@ https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css 를
  
 
 
+전역(global)으로 Vue CLI를 설치할 수도 있어 (예: npm install -g @vue/cli),
+하지만 프로젝트마다 Vue는 개별 설치하는 게 표준이야.
+
+실제로 Vue 파일을 실행하려면 보통 개발 서버(npm run serve 같은 명령)로 띄우게 돼.
+
+
+
 1. Vue 프론트엔드 설치 (Vite 사용)
 # 1️⃣ Vue 프로젝트 생성 (Vite 사용)
 npm create vite@latest frontend --template vue  
